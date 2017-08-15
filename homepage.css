@@ -33,20 +33,20 @@ div.logo {
 div.button {
   height: 30%;
   width: 100%;
-  margin: 30px;
+  margin: 20px;
   border: 5px solid #a7a347;
   background-color: #a7a347;
   border-radius: 5px;
   text-align: center;
   color: #fffff0;
-  font-size: 16px;
+  font-size: 26px;
 }
 
 .buttons {
   float: right;
   height: 100%;
   width: auto;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 div.clear {
@@ -59,10 +59,6 @@ div.clear {
 
 .button p {
   position:relative;
-  top:30%;
+  top:25%;
   transform: translateY(-50%);
-}
-
-p {
-    font-size: 24px;
 }
