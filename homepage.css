@@ -1,0 +1,79 @@
+h1 {
+  font-family: "Contrail One","Droid Sans", Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fffff0;
+  color: #3c4219;
+  font-family :"Droid Sans", Helvetica, sans-serif;
+}
+
+div.bigblock {
+  height:300px;
+  width:300px;
+  margin:auto;
+
+}
+
+div.logo {
+  display:inline-block;
+  height: 30%;
+  width: 49%;
+  border-left: 4px solid #3c4219;
+  border-right: 4px solid #3c4219;
+  border-bottom: 4px solid #3c4219;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  padding: 30px 10px 7px;
+  font-size: 25px;
+  margin-top: 250px;
+}
+
+div.button {
+  height: 75px;
+  width: 75px;
+  margin: 20px;
+  border: 5px solid #a7a347;
+  background-color: #a7a347;
+  border-radius: 5px;
+  text-align: center;
+  color: #fffff0;
+  font-size: 26px;
+}
+
+.buttons {
+  float: right;
+  height: 300px;
+  width: auto;
+  margin-top: 150px;
+}
+
+div.clear {
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+  font-size: 0pt;
+  margin-top: -1px;
+}
+
+.button p {
+  position:relative;
+  top:25%;
+  transform: translateY(-50%);
+}
+
+div.one {
+  background-color: #FF926A;
+  border-color: #FF926A;
+}
+
+div.two {
+  background-color: #87A3FF;
+  border-color: #87A3FF;
+}
+
+div.three {
+  background-color: #EBBE3A;
+  border-color: #EBBE3A;
+}
