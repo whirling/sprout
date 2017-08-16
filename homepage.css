@@ -31,8 +31,8 @@ div.logo {
 }
 
 div.button {
-  height: 30%;
-  width: 100%;
+  height: 75px;
+  width: 75px;
   margin: 20px;
   border: 5px solid #a7a347;
   background-color: #a7a347;
@@ -44,7 +44,7 @@ div.button {
 
 .buttons {
   float: right;
-  height: 100%;
+  height: 300px;
   width: auto;
   margin-top: 150px;
 }
@@ -61,4 +61,19 @@ div.clear {
   position:relative;
   top:25%;
   transform: translateY(-50%);
+}
+
+div.one {
+  background-color: #FF926A;
+  border-color: #FF926A;
+}
+
+div.two {
+  background-color: #87A3FF;
+  border-color: #87A3FF;
+}
+
+div.three {
+  background-color: #EBBE3A;
+  border-color: #EBBE3A;
 }
