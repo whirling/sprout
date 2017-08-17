@@ -26,7 +26,7 @@ div.calm {
   margin: auto;
   color: #87A3Ff;
   font-size: 20px;
-  font-family: "Contrail One", "Droid Sans", Helvetica;
+  font-family: "Contrail One", "Droid Sans", "Helvetica";
 }
 
 /*div.clear {
@@ -42,8 +42,8 @@ div.categoryone {
   background-color: #9eafe8;
   margin-top: 30px;
   padding: 25px;
-  font-family: "Droid Sans", Helvetica;
-  color: E1E4EF;
+  font-family: "Droid Sans", "Helvetica";
+  color: #E1E4EF;
   font-size: 22px;
   border-radius: 25px;
 }
@@ -53,8 +53,8 @@ div.categorytwo {
   background-color: #99aded;
   margin-top: 10px;
   padding: 25px;
-  font-family: "Droid Sans", Helvetica;
-  color: E1E4EF;
+  font-family: "Droid Sans", "Helvetica";
+  color: #E1E4EF;
   font-size: 22px;
   border-radius: 25px;
 }
@@ -64,8 +64,8 @@ div.categorythree {
   background-color: #95aaf1;
   margin-top: 10px;
   padding: 25px;
-  font-family: "Droid Sans", Helvetica;
-  color: E1E4EF;
+  font-family: "Droid Sans", "Helvetica";
+  color: #E1E4EF;
   font-size: 22px;
   border-radius: 25px;
 }
@@ -75,8 +75,8 @@ div.categoryfour {
   background-color: #90a8f6;
   margin-top: 10px;
   padding: 25px;
-  font-family: "Droid Sans", Helvetica;
-  color: E1E4EF;
+  font-family: "Droid Sans", "Helvetica";
+  color: #E1E4EF;
   font-size: 22px;
   border-radius: 25px;
 }
@@ -86,8 +86,45 @@ div.categoryfive {
   background-color: #8ca5fa;
   margin-top: 10px;
   padding: 25px;
-  font-family: "Droid Sans", Helvetica;
-  color: E1E4EF;
+  font-family: "Droid Sans", "Helvetica";
+  color: #E1E4EF;
   font-size: 22px;
   border-radius: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #E1E4EF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Droid Sans", "Helvetica", sans-serif;
+    margin-left: 10px;
+    /*margin-right: 10px;*/
+    background-color: #87A3Ff;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+li a:hover:not(.active) {
+    background-color: #9eafe8;
+}
+
+.active {
+    background-color: #9eafe8;
 }
