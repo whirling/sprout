@@ -42,8 +42,8 @@ div.categoryone {
   background-color: #e9a626;
   margin-top: 30px;
   padding: 25px;
-  font-family: "Droid Sans", Helvetica;
-  color: fbefd8;
+  font-family: "Droid Sans", "Helvetica";
+  color: #fbefd8;
   font-size: 22px;
   border-radius: 25px;
 }
@@ -53,8 +53,8 @@ div.categorytwo {
   background-color: #ebad38;
   margin-top: 10px;
   padding: 25px;
-  font-family: "Droid Sans", Helvetica;
-  color: fbefd8;
+  font-family: "Droid Sans", "Helvetica";
+  color: #fbefd8;
   font-size: 22px;
   border-radius: 25px;
 }
@@ -64,8 +64,8 @@ div.categorythree {
   background-color: #edb44a;
   margin-top: 10px;
   padding: 25px;
-  font-family: "Droid Sans", Helvetica;
-  color: fbefd8;
+  font-family: "Droid Sans", "Helvetica";
+  color: #fbefd8;
   font-size: 22px;
   border-radius: 25px;
 }
@@ -75,8 +75,8 @@ div.categoryfour {
   background-color: #efbc5c;
   margin-top: 10px;
   padding: 25px;
-  font-family: "Droid Sans", Helvetica;
-  color: fbefd8;
+  font-family: "Droid Sans", "Helvetica";
+  color: #fbefd8;
   font-size: 22px;
   border-radius: 25px;
 }
@@ -86,8 +86,45 @@ div.categoryfive {
   background-color: #f0c36d;
   margin-top: 10px;
   padding: 25px;
-  font-family: "Droid Sans", Helvetica;
-  color: fbefd8;
+  font-family: "Droid Sans", "Helvetica";
+  color: #fbefd8;
   font-size: 22px;
   border-radius: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #fbefd8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Droid Sans", "Helvetica", sans-serif;
+    margin-left: 10px;
+    /*margin-right: 10px;*/
+    background-color: #e9a626;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+li a:hover:not(.active) {
+    background-color: #efbc5c;
+}
+
+.active {
+    background-color: #efbc5c;
 }

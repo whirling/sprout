@@ -1,0 +1,21 @@
+body {
+  color: #3c4219;
+  font-family: "Contrail One", "Droid Sans", "Helvetica";
+  font-size: 36px;
+  background-color: #fffff0;
+}
+
+div.username {
+  text-align: center;
+  padding-top: 40%;
+}
+
+a:link {
+  color: #3c4219;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3c4219;
+  text-decoration: none;
+}
