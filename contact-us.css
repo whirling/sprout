@@ -19,3 +19,9 @@ a:hover {
   color: #3c4219;
   text-decoration: none;
 }
+
+div.backhome {
+  height: 100%;
+  padding-top: 30%;
+  /*margin-bottom: 0;*/
+}
