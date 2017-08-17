@@ -1,18 +1,14 @@
-<html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
-      <div>
-  <h1><a href="/">Django Girls Blog</a></h1>
-</div>
 
-{% for resource in resources %}
-  <div>
-      <p>published: {{ resource.published_date }}</p>
-      <h1><a href="">{{ resource.title }}</a></h1>
-      <p>{{ resource.text|linebreaksbr }}</p>
-  </div>
-{% endfor %}
-    </body>
-</html>
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for resource in resources %}
+        <div class="post">
+            <div class="date">
+                {{ resource.published_date }}
+            </div>
+            <h1><a href="{% url 'resource_detail' pk=resource.pk %}">{{ resource.title }}</a></h1>
+            <p>{{ resource.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
