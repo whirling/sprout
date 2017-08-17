@@ -7,7 +7,7 @@
                 {{ resource.published_date }}
             </div>
             <h1><a href="{% url 'resource_detail' pk=resource.pk %}">{{ resource.title }}</a></h1>
-            <p>{{ resource.text|linebreaksbr }}</p>
+            <p>{{ resource.description|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
+{% endblock %}
