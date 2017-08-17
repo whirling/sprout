@@ -64,8 +64,8 @@ div.categorythree {
   background-color: #95aaf1;
   margin-top: 10px;
   padding: 25px;
-  font-family: "Droid Sans", Helvetica;
-  color: E1E4EF;
+  font-family: "Droid Sans", "Helvetica";
+  color: #E1E4EF;
   font-size: 22px;
   border-radius: 25px;
 }
@@ -75,8 +75,8 @@ div.categoryfour {
   background-color: #90a8f6;
   margin-top: 10px;
   padding: 25px;
-  font-family: "Droid Sans", Helvetica;
-  color: E1E4EF;
+  font-family: "Droid Sans", "Helvetica";
+  color: #E1E4EF;
   font-size: 22px;
   border-radius: 25px;
 }
@@ -86,8 +86,8 @@ div.categoryfive {
   background-color: #8ca5fa;
   margin-top: 10px;
   padding: 25px;
-  font-family: "Droid Sans", Helvetica;
-  color: E1E4EF;
+  font-family: "Droid Sans", "Helvetica";
+  color: #E1E4EF;
   font-size: 22px;
   border-radius: 25px;
 }
