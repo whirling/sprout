@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from .models import Resource
 from .forms import ResourceForm
@@ -14,15 +14,31 @@ def resource_detail(request, pk):
     return render(request, 'blog/resource_detail.html', {'resource': resource})
 
 def resource_new(request):
-    form = ResourceForm()
+    # form = ResourceForm()
 
     if request.method == "POST":
         form = ResourceForm(request.POST)
         if form.is_valid():
             resource = form.save(commit=False)
             resource.author = request.user
-            resource.published_date = timezone.now()
+            # resource.published_date = timezone.now()
             resource.save()
+            return redirect('resource_detail', pk=resource.pk)
     else:
         form = ResourceForm()
+    return render(request, 'blog/resource_edit.html', {'form': form})
+
+
+def resource_edit(request, pk):
+    post = get_object_or_404(Resource, pk=pk)
+    if request.method == "POST":
+        form = ResourceForm(request.POST, instance=resource)
+        if form.is_valid():
+            resource = form.save(commit=False)
+            resource.author = request.user
+            # resource.published_date = timezone.now()
+            resource.save()
+            return redirect('resource_detail', pk=resource.pk)
+    else:
+        form = ResourceForm(instance=resource)
     return render(request, 'blog/resource_edit.html', {'form': form})

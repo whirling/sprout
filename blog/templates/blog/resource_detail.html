@@ -1,3 +1,5 @@
+
+
 {% extends 'blog/base.html' %}
 
 {% block content %}
@@ -7,6 +9,11 @@
                 {{ resource.published_date }}
             </div>
         {% endif %}
+
+        {% if user.is_authenticated %}
+          <a class="btn btn-default" href="{% url 'resource_edit' pk=resource.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        {% endif %}
+
         <h1>{{ resource.title }}</h1>
         <p>{{ resource.text|linebreaksbr }}</p>
     </div>
