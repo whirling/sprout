@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html>
+{% extends 'blog/base.html' %}
 
-<head>
-  <link rel="stylesheet" href="help.css">
+{% load staticfiles %}
+{% block content %}
+
+  <link rel="stylesheet" href="{% static 'css/help.css' %}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
-</head>
 
-<body>
   <div class="title">
     <div class="point">
       <i class="fa fa-exclamation fa-5x"></i>
@@ -18,11 +17,9 @@
     </div>
   </div>
   <div>
-    <a link href="homepage.html">
+    <a link href="../">
       <i class="fa fa-angle-double-left fa-5x"></i>
     </a>
   </div>
 
-</body>
-
-</html>
+{% endblock %}
