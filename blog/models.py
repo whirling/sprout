@@ -20,7 +20,7 @@ class Resource(models.Model):
     contact = models.TextField(default='')
     insurance = models.BooleanField(default=False)
     hotline = models.TextField(default='')
-    self_health = models.TextField(default='')
+    self_health = models.BooleanField(default=False)
     therapy = models.BooleanField(default=False)
     games = models.BooleanField(default=False)
     sounds = models.BooleanField(default=False)
