@@ -10,4 +10,6 @@ class ResourceForm(forms.ModelForm):
         'published_date', 'issue', 'wheelchair_accessible', 'money',
         'parentalconsent', 'min_age', 'max_age', 'transportation', 'contact',
         'insurance', 'hotline', 'self_health', 'therapy', 'games', 'sounds',
+        'games', 'audio', 'affirmations', 'animals', 'c_visuals',
+        'hobbies', 'meditate', 'spaces', 'vent', 'visuals',
         )
