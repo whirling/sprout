@@ -5,9 +5,17 @@ from .forms import ResourceForm
 
 
 # Create your views here.
-def resource_list(request):
-    resources = Resource.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/resource_list.html', {'resources': resources})
+def homepage(request):
+    return render(request, 'blog/homepage.html', {})
+
+def happy(request):
+    return render(request, 'blog/happy.html', {})
+
+def calm(request):
+    return render(request, 'blog/calm.html', {})
+
+def help(request):
+    return render(request, 'blog/help.html', {})
 
 def resource_detail(request, pk):
     resource = get_object_or_404(Resource, pk=pk)

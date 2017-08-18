@@ -1,0 +1,65 @@
+{% extends 'blog/base.html' %}
+
+{% load staticfiles %}
+{% block content %}
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+
+  <div class="bigblock">
+    <div class="logo"><h1>sprout</h1></div>
+      <div class="buttons">
+        <a link href="help.html">
+          <div class="button one" onmouseover="mOverone(this)" onmouseout="mOutone(this)">
+            <i class="fa fa-exclamation fa-3x"></i>
+          </div>
+        </a>
+        <a link href="calm.html">
+          <div class="button two" onmouseover="mOvertwo(this)" onmouseout="mOuttwo(this)">
+            <i class="fa fa-tint fa-3x"></i>
+          </div>
+        </a>
+        <a link href="happy.html">
+          <div class="button three" onmouseover="mOverthree(this)" onmouseout="mOutthree(this)">
+            <i class="fa fa-sun-o fa-3x"></i>
+          </div>
+        </a>
+      </div>
+        <div class="clear"></div>
+    </div>
+  </div>
+
+  <script>
+    function mOverone(obj) {
+        // console.log("function mover called");
+        obj.innerHTML = "help";
+    };
+
+    function mOutone(obj) {
+        obj.innerHTML = "<i class='fa fa-exclamation fa-3x'></i>";
+    };
+
+    function mOvertwo(obj) {
+        // console.log("function mover called");
+        obj.innerHTML = "calm";
+    };
+
+    function mOuttwo(obj) {
+        obj.innerHTML = "<i class='fa fa-tint fa-3x'></i>";
+    };
+
+    function mOverthree(obj) {
+        // console.log("function mover called");
+        obj.innerHTML = "happy";
+    };
+
+    function mOutthree(obj) {
+        obj.innerHTML = "<i class='fa fa-sun-o fa-3x'></i>";
+    };
+
+</script>
+
+{% endblock %}
