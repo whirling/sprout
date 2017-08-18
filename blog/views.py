@@ -22,8 +22,6 @@ def resource_detail(request, pk):
     return render(request, 'blog/resource_detail.html', {'resource': resource})
 
 def resource_new(request):
-    # form = ResourceForm()
-
     if request.method == "POST":
         form = ResourceForm(request.POST)
         if form.is_valid():

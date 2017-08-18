@@ -9,21 +9,24 @@ class Resource(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
     issue = models.TextField(default='')
-    address = models.TextField(default='')
-    accessibility = models.BooleanField(default=False)
+    wheelchair_accessible = models.BooleanField(default=False)
     money = models.BooleanField(default=False)
     parentalconsent = models.BooleanField(default=False)
-    age = models.TextField(default='')
-    transportation = models.TextField(default='')
-    openingTime = models.BooleanField(default=False)
-    closingTime = models.BooleanField(default=False)
-    contact = models.TextField(default='')
+    min_age = models.TextField(default='0')
+    max_age = models.TextField(default='99')
+    transportation = models.BooleanField(default=False)
+    contact = models.EmailField(default='')
     insurance = models.BooleanField(default=False)
     hotline = models.TextField(default='')
     self_health = models.BooleanField(default=False)
     therapy = models.BooleanField(default=False)
     games = models.BooleanField(default=False)
     sounds = models.BooleanField(default=False)
+    # openingTime = models.TimeField(auto_now=False, auto_now_add=False)
+    # closingTime = models.TimeField(auto_now=False, auto_now_add=False)
+    # address = models.TextField(default='')
+
+
 
 #####
 # soundList = {"noises": "relaxing_noises", }
