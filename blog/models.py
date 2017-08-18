@@ -5,7 +5,7 @@ from django.utils import timezone
 class Resource(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField(default='')
-    author = models.ForeignKey('auth.User')
+    # author = models.ForeignKey('auth.User')
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
     issue = models.TextField(default='')

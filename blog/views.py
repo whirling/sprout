@@ -17,7 +17,8 @@ def games(request):
     return render(request, 'blog/games.html', {})
 
 def visuals(request):
-    return render(request, 'blog/visuals.html', {})
+    resources = Resource.objects.all().order_by('title')
+    return render(request, 'blog/visuals.html', {"resources":resources})
 
 def animals(request):
     return render(request, 'blog/animals.html', {})
