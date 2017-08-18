@@ -17,6 +17,12 @@ def calm(request):
 def help(request):
     return render(request, 'blog/help.html', {})
 
+def about(request):
+    return render(request, 'blog/about.html', {})
+
+def contact-us(request):
+    return render(request, 'blog/contact-us.html', {})
+
 def resource_detail(request, pk):
     resource = get_object_or_404(Resource, pk=pk)
     return render(request, 'blog/resource_detail.html', {'resource': resource})

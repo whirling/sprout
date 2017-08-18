@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html>
+{% extends 'blog/base.html' %}
 
-<head>
+{% load staticfiles %}
+{% block content %}
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="calm.css">
+  <link rel="stylesheet" href="{% static 'css/calm.css' %}">
   <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
-</head>
 
-<body>
 
   <ul>
-    <li><a href="homepage.html">home</a></li>
-    <li><a href="contact-us.html">contact us</a></li>
-    <li><a href="about.html">about</a></li>
+    <li><a href="homepage">home</a></li>
+    <li><a href="contact-us">contact us</a></li>
+    <li><a href="about">about</a></li>
   </ul>
 
   <div class="header">
@@ -28,10 +27,4 @@
   <div class=categoryfour>vent</div>
   <div class=categoryfive>hobbies</div>
 
-</body>
-
-
-
-
-
-</html>
+{% endblock %}
