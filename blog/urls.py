@@ -5,7 +5,6 @@ urlpatterns = [
     url(r'^$', views.homepage, name='homepage'),
     url(r'^happy/$', views.happy, name='happy'),
     url(r'^games/$', views.games, name='games'),
-    url(r'^visuals/$', views.visuals, name='visuals'),
     url(r'^calm/$', views.calm, name='calm'),
     url(r'^help/$', views.help, name='help'),
     url(r'^about/$', views.about, name='about'),
