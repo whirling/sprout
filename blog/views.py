@@ -8,6 +8,8 @@ from .forms import ResourceForm
 def homepage(request):
     return render(request, 'blog/homepage.html', {})
 
+##################################################################
+
 def happy(request):
     return render(request, 'blog/happy.html', {})
 
@@ -17,18 +19,36 @@ def games(request):
 def visuals(request):
     return render(request, 'blog/visuals.html', {})
 
-def affirmations(request):
-    return render(request, 'blog/affirmations.html', {})
-
 def animals(request):
     return render(request, 'blog/animals.html', {})
+
+def affirmations(request):
+    return render(request, 'blog/affirmations.html', {})
 
 def spaces(request):
     return render(request, 'blog/spaces.html', {})
 
+##################################################################
 
 def calm(request):
     return render(request, 'blog/calm.html', {})
+
+def audio(request):
+    return render(request, 'blog/audio.html', {})
+
+def c_visuals(request):
+    return render(request, 'blog/c_visuals.html', {})
+
+def meditate(request):
+    return render(request, 'blog/meditate.html', {})
+
+def vent(request):
+    return render(request, 'blog/vent.html', {})
+
+def hobbies(request):
+    return render(request, 'blog/hobbies.html', {})
+
+##################################################################
 
 def help(request):
     return render(request, 'blog/help.html', {})
