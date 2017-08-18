@@ -20,7 +20,7 @@ def help(request):
 def about(request):
     return render(request, 'blog/about.html', {})
 
-def contact-us(request):
+def contact_us(request):
     return render(request, 'blog/contact-us.html', {})
 
 def resource_detail(request, pk):
