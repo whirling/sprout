@@ -14,6 +14,9 @@ def happy(request):
 def games(request):
     return render(request, 'blog/games.html', {})
 
+def visuals(request):
+    return render(request, 'blog/visuals.html', {})
+
 def calm(request):
     return render(request, 'blog/calm.html', {})
 
