@@ -23,7 +23,7 @@
   </div>
 {% for resource in resources %}
     <div class="individual-resource">
-        <h1><a href="">{{ resource.title }}</a></h1>
+        <h1><a href="{% url 'resource_detail' pk=resource.pk %}">{{ resource.title }}</a></h1>
         <p>{{ resource.description|linebreaksbr }}</p>
     </div>
 {% endfor %}
