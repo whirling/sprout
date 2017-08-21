@@ -15,7 +15,7 @@ class Resource(models.Model):
     min_age = models.TextField(default='0')
     max_age = models.TextField(default='99')
     transportation = models.BooleanField(default=False)
-    contact = models.EmailField(default='')
+    # contact = models.EmailField(default='')
     insurance = models.BooleanField(default=False)
     hotline = models.TextField(default='')
     self_health = models.BooleanField(default=False)
