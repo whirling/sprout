@@ -7,7 +7,7 @@ class ResourceForm(forms.ModelForm):
         model = Resource
         fields = (
         'title', 'description', 'created_date',
-        'published_date', 'issue', 'wheelchair_accessible', 'money',
+        'published_date', 'wheelchair_accessible', 'money',
         'parentalconsent', 'min_age', 'max_age', 'transportation', 'contact',
         'insurance', 'hotline', 'self_health', 'therapy', 'games',
         'games', 'audio', 'affirmations', 'animals', 'c_visuals',

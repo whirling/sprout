@@ -121,6 +121,7 @@ li a {
     border-top-left-radius: 15px;
 }
 
+
 li a:hover:not(.active) {
     background-color: #efbc5c;
 }
