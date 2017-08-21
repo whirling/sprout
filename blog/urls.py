@@ -18,6 +18,7 @@ urlpatterns = [
     url(r'^help/$', views.help, name='help'),
     url(r'^about/$', views.about, name='about'),
     url(r'^contact_us/$', views.contact_us, name='contact_us'),
+    url(r'^contact_us/twitter.com/sproutgwc/$', views.redirect_to_twitter, name='redirect_to_twitter'),
     url(r'^resource/(?P<pk>\d+)/$', views.resource_detail, name='resource_detail'),
     url(r'^resource/new/$', views.resource_new, name='resource_new'),
     url(r'^resource/(?P<pk>\d+)/edit/$', views.resource_edit, name='resource_edit'),

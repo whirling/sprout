@@ -17,7 +17,8 @@ def games(request):
     return render(request, 'blog/games.html', {})
 
 def visuals(request):
-    return render(request, 'blog/visuals.html', {})
+    resources = Resource.objects.all().order_by('title')
+    return render(request, 'blog/visuals.html', {"resources":resources})
 
 def animals(request):
     return render(request, 'blog/animals.html', {})
@@ -53,11 +54,20 @@ def hobbies(request):
 def help(request):
     return render(request, 'blog/help.html', {})
 
+##################################################################
+
 def about(request):
     return render(request, 'blog/about.html', {})
 
+##################################################################
+
 def contact_us(request):
     return render(request, 'blog/contact-us.html', {})
+
+def redirect_to_twitter(request):
+    return redirect('https://twitter.com/sproutgwc')
+
+##################################################################
 
 def resource_detail(request, pk):
     resource = get_object_or_404(Resource, pk=pk)
