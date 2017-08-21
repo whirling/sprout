@@ -8,7 +8,7 @@ class Resource(models.Model):
     # author = models.ForeignKey('auth.User')
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    issue = models.TextField(default='')
+    # issue = models.TextField(default='')
     wheelchair_accessible = models.BooleanField(default=False)
     money = models.BooleanField(default=False)
     parentalconsent = models.BooleanField(default=False)

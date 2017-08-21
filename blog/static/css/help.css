@@ -35,35 +35,3 @@ div.point {
   padding: 50px;
   vertical-align: middle;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: none;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-li a {
-    display: block;
-    color: #FFEFEA;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: "Droid Sans", "Helvetica", sans-serif;
-    margin-left: 10px;
-    background-color: #FF926A;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-}
-
-li a:hover:not(.active) {
-    background-color: #FF926A;
-}
-
-.active {
-    background-color: #EBBE3A;
-}
