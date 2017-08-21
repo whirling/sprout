@@ -14,20 +14,24 @@ def happy(request):
     return render(request, 'blog/happy.html', {})
 
 def games(request):
-    return render(request, 'blog/games.html', {})
+    resources = Resource.objects.filter(games=True).order_by('title')
+    return render(request, 'blog/games.html', {"resources":resources})
 
 def visuals(request):
-    resources = Resource.objects.all().order_by('title')
+    resources = Resource.objects.filter(visuals=True).order_by('title')
     return render(request, 'blog/visuals.html', {"resources":resources})
 
 def animals(request):
-    return render(request, 'blog/animals.html', {})
+    resources = Resource.objects.filter(animals=True).order_by('title')
+    return render(request, 'blog/animals.html', {"resources":resources})
 
 def affirmations(request):
-    return render(request, 'blog/affirmations.html', {})
+    resources = Resource.objects.filter(affirmations=True).order_by('title')
+    return render(request, 'blog/affirmations.html', {"resources":resources})
 
 def spaces(request):
-    return render(request, 'blog/spaces.html', {})
+    resources = Resource.objects.filter(spaces=True).order_by('title')
+    return render(request, 'blog/spaces.html', {"resources":resources})
 
 ##################################################################
 
@@ -35,19 +39,24 @@ def calm(request):
     return render(request, 'blog/calm.html', {})
 
 def audio(request):
-    return render(request, 'blog/audio.html', {})
+    resources = Resource.objects.filter(audio=True).order_by('title')
+    return render(request, 'blog/audio.html', {"resources":resources})
 
 def c_visuals(request):
-    return render(request, 'blog/c_visuals.html', {})
+    resources = Resource.objects.filter(c_visuals=True).order_by('title')
+    return render(request, 'blog/c_visuals.html', {"resources":resources})
 
 def meditate(request):
-    return render(request, 'blog/meditate.html', {})
+    resources = Resource.objects.filter(meditate=True).order_by('title')
+    return render(request, 'blog/meditate.html', {"resources":resources})
 
 def vent(request):
-    return render(request, 'blog/vent.html', {})
+    resources = Resource.objects.filter(vent=True).order_by('title')
+    return render(request, 'blog/vent.html', {"resources":resources})
 
 def hobbies(request):
-    return render(request, 'blog/hobbies.html', {})
+    resources = Resource.objects.filter(audio=True).order_by('title')
+    return render(request, 'blog/hobbies.html', {"resources":resources})
 
 ##################################################################
 

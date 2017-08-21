@@ -22,6 +22,14 @@
   </a>
 </div>
 
+{% for resource in resources %}
+    <div class="individual-resource">
+        <h1><a href="">{{ resource.title }}</a></h1>
+        <p>{{ resource.description|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+
+
 
 <p> text n stuff </p>
 
