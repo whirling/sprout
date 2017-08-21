@@ -1,19 +1,18 @@
-{% extends 'blog/base.html' %}
+<!DOCTYPE html>
+<html>
 
-{% load staticfiles %}
-{% block content %}
-
-
+<head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+  <link rel="stylesheet" href="graphicsforhomepage.css">
   <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+</head>
 
-
+<body>
   <div class="bigblock">
     <div class="logo">
       <div class="logo-image">
-        <img src="{% static 'images/sproutstage1.png' %}"  onclick="grow(this)" class="onesprout">
+        <img src="sproutstage1.png"  onclick="grow(this)" class="onesprout">
       </div>
         <h1>sprout</h1>
     </div>
@@ -68,16 +67,19 @@
 
     function grow(sproutlogo) {
       if (sproutlogo.src.endsWith('sproutstage1.png')) {
-        sproutlogo.src = "static/images/sproutstage2.png";
+        sproutlogo.src = 'sproutstage2.png';
         sproutlogo.class = 'twosprout';
       }
       else if (sproutlogo.src.endsWith('sproutstage2.png')) {
-        sproutlogo.src = "static/images/sproutstage3.png";
+        sproutlogo.src = 'sproutstage3.png';
       }
       else {
-        sproutlogo.src = "static/images/sproutstage1.png";
+        sproutlogo.src = 'sproutstage1.png';
       }
     };
-    </script>
 
-{% endblock %}
+
+</script>
+
+</body>
+</html>
