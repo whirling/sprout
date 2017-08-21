@@ -1,14 +1,14 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1>New post</h1>
+    <h1>New Resource</h1>
     <form method="POST" class="resource-form">{% csrf_token %}
         {{ form.as_p }}
-        check all that apply:
+        <!-- check all that apply:
         <p></p>
         <input type= "checkbox" name= "h"> sgkd
         <br>
-        <input type= "checkbox" name= "h"> bnmcv
-        <button type="submit" class="save btn btn-default">Save</button>
+        <input type= "checkbox" name= "h"> bnmcv -->
+        <button type="submit" class="save btn btn-default">Submit Resource</button>
     </form>
 {% endblock %}
