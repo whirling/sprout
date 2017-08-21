@@ -8,6 +8,9 @@ from .forms import ResourceForm
 def homepage(request):
     return render(request, 'blog/homepage.html', {})
 
+def redirect_to_hotline(request):
+    return redirect('https://suicidepreventionlifeline.org')
+
 ##################################################################
 
 def happy(request):

@@ -106,3 +106,41 @@ a:hover {
   color: none;
   text-decoration: none;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #fffff0;
+  text-align: center;
+  padding: 7px 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Droid Sans", "Helvetica", sans-serif;
+  margin-left: 10px;
+  background-color: #3c4219;
+  border-left: 4px solid #3c4219;
+  border-right: 4px solid #3c4219;
+  border-top: 4px solid #3c4219;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+li a.crisis {
+  background-color: #66AF39;
+  border-color: #66AF39;
+  color: black;
+}
