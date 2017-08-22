@@ -58,7 +58,7 @@ def vent(request):
     return render(request, 'blog/vent.html', {"resources":resources})
 
 def hobbies(request):
-    resources = Resource.objects.filter(audio=True).order_by('title')
+    resources = Resource.objects.filter(hobbies=True).order_by('title')
     return render(request, 'blog/hobbies.html', {"resources":resources})
 
 ##################################################################
