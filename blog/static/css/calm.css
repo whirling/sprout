@@ -98,13 +98,14 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: none;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
 
 li {
-    float: left;
+    float: right;
+    position: absolute;
+    right: 20px;
 }
 
 li a {

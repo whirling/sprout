@@ -1,4 +1,129 @@
+div.header {
+  width: 250px;
+  height: 100px;
+  margin: auto;
+  position: relative;
+  margin-left: 5px;
+
+}
+
 body {
+  background-color: #FFEFEA;
+}
+
+div.drop {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  margin: auto;
+}
+
+div.help {
+  width: 50%;
+  height: 100%;
+  display:inline-block;
+  /*float: right;*/
+  margin: auto;
+  color: #87A3Ff;
+  font-size: 20px;
+  font-family: "Contrail One", "Droid Sans", "Helvetica";
+}
+
+/*div.clear {
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+  font-size: 0pt;
+  margin-top: -1px;
+}*/
+
+div.categoryone {
+  width: 100%;
+  background-color: #9eafe8;
+  margin-top: 30px;
+  padding: 25px;
+  font-family: "Droid Sans", "Helvetica";
+  color: #E1E4EF;
+  font-size: 22px;
+  border-radius: 25px;
+}
+
+div.categorytwo {
+  width: 100%;
+  background-color: #99aded;
+  margin-top: 10px;
+  padding: 25px;
+  font-family: "Droid Sans", "Helvetica";
+  color: #E1E4EF;
+  font-size: 22px;
+  border-radius: 25px;
+}
+
+div.categorythree {
+  width: 100%;
+  background-color: #95aaf1;
+  margin-top: 10px;
+  padding: 25px;
+  font-family: "Droid Sans", "Helvetica";
+  color: #E1E4EF;
+  font-size: 22px;
+  border-radius: 25px;
+}
+
+div.categoryfour {
+  width: 100%;
+  background-color: #90a8f6;
+  margin-top: 10px;
+  padding: 25px;
+  font-family: "Droid Sans", "Helvetica";
+  color: #E1E4EF;
+  font-size: 22px;
+  border-radius: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    float: right;
+    position: absolute;
+    right: 20px;
+}
+
+li a {
+    display: block;
+    color: #E1E4EF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Droid Sans", "Helvetica", sans-serif;
+    margin-left: 10px;
+    /*margin-right: 10px;*/
+    background-color: #87A3Ff;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+li a:hover:not(.active) {
+    background-color: #9eafe8;
+}
+
+.active {
+    background-color: #9eafe8;
+}
+
+p {
+  color: #87A3Ff;
+}
+
+/*body {
   background-color: #FFEFEA;
 }
 
@@ -22,10 +147,14 @@ i {
   margin: auto;
 }
 
-div.notice {
-  display: inline-block;
-  width:50px;
-  padding-top: 0;
+
+div.header {
+  width: 250px;
+  height: 100px;
+  margin: auto;
+  position: relative;
+  margin-left: 5px;
+
 }
 
 div.point {
@@ -35,6 +164,7 @@ div.point {
   padding: 50px;
   vertical-align: middle;
 }
+
 
 ul {
     list-style-type: none;
@@ -71,3 +201,4 @@ li a:hover:not(.active) {
 .active {
     background-color: #EBBE3A;
 }
+*/

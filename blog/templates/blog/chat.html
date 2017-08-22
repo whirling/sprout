@@ -1,0 +1,37 @@
+{% extends 'blog/base.html' %}
+
+{% load staticfiles %}
+{% block content %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/help.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+
+<ul>
+  <li><a href="../">home</a></li>
+  <li><a href="../contact_us">contact us</a></li>
+  <li><a href="../about">about</a></li>
+</ul>
+
+<div class="header">
+  <a link href"../help">
+    <div class="help"><a href="/help"><i class="fa fa-exclamation fa-5x" style="color: #eb9239;"></i></a>
+      <div class="help"><h1>chat</h1></div>
+    </div>
+  </a>
+</div>
+
+{% for resource in resources %}
+    <div class="individual-resource">
+        <h1><a href="{% url 'resource_detail' pk=resource.pk %}">{{ resource.title }}</a></h1>
+        <p>{{ resource.description|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+
+
+
+
+
+
+{% endblock %}
