@@ -22,20 +22,11 @@ div.calm {
   width: 50%;
   height: 100%;
   display:inline-block;
-  /*float: right;*/
   margin: auto;
   color: #87A3Ff;
   font-size: 20px;
   font-family: "Contrail One", "Droid Sans", "Helvetica";
 }
-
-/*div.clear {
-  clear: both;
-  height: 1px;
-  overflow: hidden;
-  font-size: 0pt;
-  margin-top: -1px;
-}*/
 
 div.categoryone {
   width: 100%;
@@ -115,7 +106,6 @@ li a {
     text-decoration: none;
     font-family: "Droid Sans", "Helvetica", sans-serif;
     margin-left: 10px;
-    /*margin-right: 10px;*/
     background-color: #87A3Ff;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
