@@ -20,6 +20,7 @@ class Resource(models.Model):
     hotline = models.BooleanField(default=False)
     self_help = models.BooleanField(default=False)
     therapy = models.BooleanField(default=False)
+
     games = models.BooleanField(default=False)
     audio = models.BooleanField(default=False)
     affirmations = models.BooleanField(default=False)
@@ -30,17 +31,6 @@ class Resource(models.Model):
     spaces = models.BooleanField(default=False)
     vent = models.BooleanField(default=False)
     visuals = models.BooleanField(default=False)
-
-    # openingTime = models.TimeField(auto_now=False, auto_now_add=False)
-    # closingTime = models.TimeField(auto_now=False, auto_now_add=False)
-    # address = models.TextField(default='')
-
-
-
-#####
-# soundList = {"noises": "relaxing_noises", }
-########
-
 
     def publish(self):
         self.published_date = timezone.now()

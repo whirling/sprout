@@ -11,31 +11,15 @@ body {
   background-color: #fbefd8;
 }
 
-/*div.su {
-  width: 50%;
-  height: 100%;
-  display: inline-block;
-  margin: auto;
-}*/
-
 div.happy {
   width: 50%;
   height: 100%;
   display:inline-block;
-  /*float: right;*/
   margin: auto;
   color: #eb9239;
   font-size: 20px;
   font-family: "Contrail One", "Droid Sans", Helvetica;
 }
-
-/*div.clear {
-  clear: both;
-  height: 1px;
-  overflow: hidden;
-  font-size: 0pt;
-  margin-top: -1px;
-}*/
 
 div.categoryone {
   width: 100%;
@@ -115,7 +99,6 @@ li a {
     text-decoration: none;
     font-family: "Droid Sans", "Helvetica", sans-serif;
     margin-left: 10px;
-    /*margin-right: 10px;*/
     background-color: #e9a626;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
