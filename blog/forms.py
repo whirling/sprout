@@ -7,5 +7,6 @@ class ResourceForm(forms.ModelForm):
         model = Resource
         fields = (
         'title', 'description','games', 'audio', 'affirmations', 'animals', 'c_visuals',
-        'hobbies', 'meditate', 'spaces', 'vent', 'visuals',
+        'hobbies', 'meditate', 'spaces', 'vent', 'visuals', 'hotline', 'self_health', 'therapy',
+        'chat',
         )
