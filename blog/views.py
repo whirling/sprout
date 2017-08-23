@@ -67,19 +67,19 @@ def help(request):
     return render(request, 'blog/help.html', {})
 
 def hotline(request):
-    resources = Resource.objects.filter(vent=True).order_by('title')
+    resources = Resource.objects.filter(hotline=True).order_by('title')
     return render(request, 'blog/hotline.html', {"resources":resources})
 
 def therapy(request):
-    resources = Resource.objects.filter(vent=True).order_by('title')
+    resources = Resource.objects.filter(therapy=True).order_by('title')
     return render(request, 'blog/therapy.html', {"resources":resources})
 
 def self_help(request):
-    resources = Resource.objects.filter(vent=True).order_by('title')
+    resources = Resource.objects.filter(self_help=True).order_by('title')
     return render(request, 'blog/self_help.html', {"resources":resources})
 
 def chat(request):
-    resources = Resource.objects.filter(vent=True).order_by('title')
+    resources = Resource.objects.filter(chat=True).order_by('title')
     return render(request, 'blog/chat.html', {"resources":resources})
 
 ##################################################################

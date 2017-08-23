@@ -91,12 +91,11 @@ ul {
     background-color: none;
     bottom: 0;
     width: 100%;
+
 }
 
 li {
     float: right;
-    position: absolute;
-    right: 20px;
 }
 
 li a {
@@ -108,8 +107,7 @@ li a {
     font-family: "Droid Sans", "Helvetica", sans-serif;
     margin-left: 10px;
     background-color: #87A3Ff;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-radius: 15px;
 }
 
 li a:hover:not(.active) {
